@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 井字棋 react 教程demo 
+
+url (https://react.docschina.org/tutorial/tutorial.html).
 
 ## Available Scripts
 
