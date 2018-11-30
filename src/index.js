@@ -49,6 +49,10 @@ class Board extends React.Component {
     handleClick(i) {
         //我们使用了 .slice() 方法来将之前的数组数据浅拷贝到了一个新的数组中，而不是修改已有的数组。
         const squares = this.state.squares.slice();
+        //获胜后禁止落子
+        if (this.calculateWinner(squares) || squares[i]) {
+            return;
+        }
         //轮流执子
         squares[i] = this.state.xIsNext ? 'X' : 'O';
         this.setState({
